@@ -7,8 +7,10 @@ def f1(t):
 def f2(t):
     return 1/t
 
-def f3(t):
-    return 2*t+3
+def f3(t,c):#
+    return t+c#
+
+c=int(input())#
 
 t1=np.arange(0,5.1,0.02)
 t2=np.arange(0.02,5.1,0.02) #for 1/x
@@ -29,7 +31,7 @@ plt.plot(t2,f2(t2),'r--')
 plt.subplot(212)
 plt.title('x')
 plt.grid(True)
-plt.plot(t1,f3(t1),'g')
+plt.plot(t1,f3(t1,c),'g')#
 
 plt.subplots_adjust(hspace=0.5)
 plt.show()
