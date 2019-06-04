@@ -7,10 +7,10 @@ def f1(t):
 def f2(t):
     return 1/t
 
-def f3(t,c):#
-    return t+c#
+def f3(t,c):
+    return t+c
 
-c=int(input())#
+c=0
 
 t1=np.arange(0,5.1,0.02)
 t2=np.arange(0.02,5.1,0.02) #for 1/x
