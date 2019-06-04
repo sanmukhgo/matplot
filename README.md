@@ -1,8 +1,6 @@
 # Matplot
-Shows different funtion plots using matplotlib in a python 3.6 virtual environment.
+Shows different funtion plots using 
 
--Sine wave
+-tkinter application with matplotlib in a python 3.6 virtual environment
 
--1/x Hyperbola
-
--Straight Line
+-javascript based using plotly.js
