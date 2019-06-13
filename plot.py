@@ -3,8 +3,12 @@ import numpy as np
 import matplotlib
 from matplotlib.axes import Axes
 matplotlib.use("TkAgg")
-from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2Tk #NavigationToolbar2Tk
 from matplotlib.figure import Figure
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+try:
+    from matplotlib.backends.backend_tkagg import NavigationToolbar2Tk
+except:
+    from matplotlib.backends.backend_tkagg import NavigationToolbar2TkAgg as NavigationToolbar2Tk
 
 def line(t,c=0):
     return t+c
@@ -39,7 +43,7 @@ frame2=tk.Frame(root)
 frame1.pack(side=tk.LEFT)
 frame2.pack(side=tk.LEFT)
 
-txt=tk.Label(frame1,text="c=")
+txt=tk.Label(frame1,text="C=")
 txt.pack(side=tk.LEFT)
 
 box=tk.Entry(frame1)
